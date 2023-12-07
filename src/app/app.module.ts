@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HttpClientModule} from '@angular/common/http'
+import { ReactiveFormsModule } from '@angular/forms';
+import { JsonFormComponent } from './components/json-form/json-form.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JsonFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
